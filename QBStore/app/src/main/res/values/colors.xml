@@ -145,9 +145,11 @@
     <color name="grassgreen">#99cc33</color><!--草绿色 -->
 
     <color name="rgb_dd3217">#dd3217</color><!--主色 -->
+    <color name="rgb_ff7505">#ff7505</color><!--主色 -->
     <color name="rgb_2dbe8d">#2dbe8d</color><!--铺色 -->
     <color name="rgb_ff9906">#ff9906</color><!--铺色 -->
     <color name="rgb_333333">#333333</color><!--文字色 -->
+    <color name="rgb_434343">#434343</color><!--文字色 -->
     <color name="rgb_666666">#666666</color><!--文字色 -->
     <color name="rgb_999999">#999999</color><!--文字色 -->
     <color name="rgb_9d9d9d">#9d9d9d</color><!--文字色 -->

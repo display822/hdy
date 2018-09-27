@@ -4,6 +4,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/y1"
-        android:background="@color/rgb_e2e2e2"/>
+        android:background="#e6e6e6"/>
 
 </merge>

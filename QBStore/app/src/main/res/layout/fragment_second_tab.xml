@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:layout_marginTop="-1dp"
     android:orientation="vertical">
 
     <!--头部-->
     <RelativeLayout
         android:id="@+id/rl_header_content"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y338"
+        android:layout_height="@dimen/y340"
         android:background="@mipmap/fragment_second_head_bg">
 
         <TextView
@@ -16,10 +18,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/y120"
+            android:layout_marginTop="@dimen/y100"
             android:text="@string/second_fragment_tgljsy"
-            android:textColor="@color/white"
-            android:textSize="13sp" />
+            android:textColor="#fff9e4"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_profit_num"
@@ -29,14 +31,20 @@
             android:layout_marginTop="@dimen/y10"
             android:layout_centerHorizontal="true"
             android:text="320"
-            android:textColor="@color/white"
-            android:textSize="36sp" />
+            android:textStyle="bold"
+            android:textColor="#fffdfb"
+            android:textSize="32sp" />
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_content_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginRight="@dimen/x18"
+        android:background="@drawable/shape_second"
+        android:layout_marginTop="-32dp"
+        />
 
 
 </LinearLayout>

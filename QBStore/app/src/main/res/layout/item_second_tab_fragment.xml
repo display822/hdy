@@ -9,9 +9,10 @@
         android:id="@+id/tv_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/y32"
+        android:layout_marginTop="@dimen/y40"
         android:includeFontPadding="false"
-        android:textColor="@color/rgb_333333"
+        android:layout_marginLeft="@dimen/x38"
+        android:textColor="@color/rgb_434343"
         android:textSize="16sp" />
 
 
@@ -20,11 +21,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_item_title"
-        android:layout_marginBottom="@dimen/y32"
-        android:layout_marginTop="@dimen/y32"
+        android:layout_marginBottom="@dimen/y26"
+        android:layout_marginTop="@dimen/y28"
+        android:layout_marginLeft="@dimen/x38"
         android:includeFontPadding="false"
-        android:textColor="@color/rgb_999999"
-        android:textSize="12sp" />
+        android:textColor="@color/rgb_9d9d9d"
+        android:textSize="14sp" />
 
 
     <TextView
@@ -34,12 +36,13 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:includeFontPadding="true"
-        android:textColor="@color/rgb_dd3217"
-        android:textSize="36sp" />
+        android:textColor="@color/rgb_ff7505"
+        android:textStyle="bold"
+        android:textSize="20sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_height="@dimen/y1"
-        android:background="@color/rgb_e2e2e2"/>
+        android:background="#e6e6e6"/>
 </RelativeLayout>
