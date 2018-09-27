@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/tv_item_background"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y284"
+            android:layout_height="@dimen/y292"
             android:scaleType="centerCrop"
             android:src="@mipmap/test_2_ico" />
 
@@ -36,7 +36,9 @@
             android:layout_marginTop="@dimen/y24"
             android:includeFontPadding="false"
             android:textColor="@color/white"
-            android:textSize="36sp" />
+            android:textStyle="bold"
+            android:text="1111"
+            android:textSize="26sp" />
 
 
         <TextView
@@ -57,8 +59,9 @@
             android:layout_below="@+id/tv_view"
             android:layout_centerHorizontal="true"
             android:includeFontPadding="false"
-            android:textColor="@color/rgb_f6f6f6"
-            android:textSize="14sp" />
+            android:textColor="@color/white"
+            android:text="11111"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_item_num"
@@ -66,9 +69,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_item_name"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/y20"
+            android:layout_marginTop="@dimen/y30"
             android:includeFontPadding="false"
             android:textColor="@color/white"
+            android:text="1111"
             android:textSize="14sp" />
 
 

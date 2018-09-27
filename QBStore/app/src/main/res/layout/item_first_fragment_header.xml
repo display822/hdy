@@ -21,8 +21,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x60"
-                android:layout_height="@dimen/x60"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_wallet_store_ico" />
 
@@ -46,8 +46,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x60"
-                android:layout_height="@dimen/x60"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_integral_ico" />
 
@@ -71,8 +71,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x60"
-                android:layout_height="@dimen/x60"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_neophyte_ico" />
 
@@ -96,8 +96,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x60"
-                android:layout_height="@dimen/x60"
+                android:layout_width="@dimen/x45"
+                android:layout_height="@dimen/x45"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_sign_in_ico" />
 

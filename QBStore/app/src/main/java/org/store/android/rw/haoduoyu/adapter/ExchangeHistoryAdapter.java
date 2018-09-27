@@ -10,7 +10,7 @@ import org.store.android.rw.haoduoyu.widget.utils.GlideUtils;
 public class ExchangeHistoryAdapter extends BaseQuickAdapter<ExchangeHistoryData,BaseViewHolder> {
 
     public ExchangeHistoryAdapter( ) {
-        super(R.layout.item_product_new);
+        super(R.layout.item_product_details);
     }
 
     @Override
