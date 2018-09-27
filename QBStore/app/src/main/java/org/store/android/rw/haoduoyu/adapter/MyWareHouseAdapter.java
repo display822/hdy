@@ -18,9 +18,9 @@ public class MyWareHouseAdapter extends BaseQuickAdapter<ProductDetailsData, Bas
     protected void convert(BaseViewHolder helper, ProductDetailsData item) {
         GlideUtils.loadImage(mContext,item.getProductPic(),(RoundedImageView)helper.getView(R.id.iv_item_ico));
         helper.setVisible(R.id.ll_item_old_price, true);
-        helper.setText(R.id.tv_item_price, item.getPrice() + "")
+        helper.setText(R.id.tv_item_price, "" + item.getPrice())
                 .setText(R.id.tv_item_title, item.getProductName())
-                .setText(R.id.tv_item_old_price, item.getPrice() + "")
+                .setText(R.id.tv_item_old_price, "￥" + item.getPrice())
                 .setText(R.id.tv_item_type, getTypeText(item.getStatus()));
 
     }

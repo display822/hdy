@@ -163,7 +163,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 //     * @param type
 //     */
     public void setToolBarColor() {
-        mToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
+        mToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.fb));
         mToolbarTitle.setTextColor(ContextCompat.getColor(this, R.color.rgb_333333));
         mToolbarSubTitle.setTextColor(ContextCompat.getColor(this, R.color.rgb_333333));
         if ( isShowBacking()){
