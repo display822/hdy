@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/login_logo"
-            android:layout_marginTop="@dimen/y46"
+            android:layout_marginTop="@dimen/y44"
             android:layout_gravity="center"
             />
 
@@ -39,9 +39,9 @@
         <!--手机号 -->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:background="#33000000"
-            android:layout_marginTop="@dimen/y20">
+            android:layout_marginTop="@dimen/y18">
 
             <ImageView
                 android:id="@+id/iv_phone_ico"
@@ -71,9 +71,9 @@
         <!--验证码-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:background="#33000000"
-            android:layout_marginTop="@dimen/y20">
+            android:layout_marginTop="@dimen/y18">
 
             <ImageView
                 android:id="@+id/iv_smscode_psw"
@@ -119,9 +119,9 @@
         <!--新密码-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:background="#33000000"
-            android:layout_marginTop="@dimen/y20">
+            android:layout_marginTop="@dimen/y18">
 
             <ImageView
                 android:id="@+id/iv_phone_psw"
@@ -152,9 +152,9 @@
         <!--确认密码-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:background="#33000000"
-            android:layout_marginTop="@dimen/y20">
+            android:layout_marginTop="@dimen/y18">
 
             <ImageView
                 android:id="@+id/iv_phone_new_psw"
@@ -185,9 +185,9 @@
         <!--用户昵称-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:background="#33000000"
-            android:layout_marginTop="@dimen/y20">
+            android:layout_marginTop="@dimen/y18">
 
             <ImageView
                 android:id="@+id/iv_user_name"
@@ -216,9 +216,9 @@
         <!--推广人-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="46dp"
             android:background="#33000000"
-            android:layout_marginTop="@dimen/y20">
+            android:layout_marginTop="@dimen/y18">
 
             <ImageView
                 android:id="@+id/iv_recommend_phone"
@@ -251,7 +251,7 @@
             android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y88"
-            android:layout_marginTop="@dimen/y40"
+            android:layout_marginTop="@dimen/y38"
             android:background="@drawable/login_or_register_btn"
             android:gravity="center"
             android:text="注册"

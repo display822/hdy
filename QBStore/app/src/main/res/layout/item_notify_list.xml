@@ -7,9 +7,9 @@
 
     <ImageView
         android:id="@+id/iv_item_ico"
-        android:layout_width="@dimen/x26"
-        android:layout_height="@dimen/x26"
-        android:layout_marginLeft="@dimen/x24"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_marginLeft="@dimen/x52"
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/x20"
         android:src="@mipmap/notify_item_ico" />
@@ -23,8 +23,9 @@
         android:layout_marginTop="@dimen/y32"
         android:layout_toRightOf="@+id/iv_item_ico"
         android:includeFontPadding="false"
-        android:textColor="@color/black"
-        android:textSize="14sp" />
+        android:layout_marginLeft="@dimen/x16"
+        android:textColor="#434343"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tv_item_date"
@@ -33,11 +34,12 @@
         android:layout_toLeftOf="@+id/iv_right_back"
         android:layout_below="@+id/tv_item_title"
         android:layout_marginBottom="@dimen/y32"
-        android:layout_marginTop="@dimen/y10"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_marginLeft="@dimen/x16"
         android:layout_toRightOf="@+id/iv_item_ico"
         android:includeFontPadding="false"
-        android:textColor="@color/rgb_999999"
-        android:textSize="12sp" />
+        android:textColor="@color/rgb_9d9d9d"
+        android:textSize="14sp" />
 
 
     <ImageView
@@ -50,7 +52,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y8"
+        android:layout_height="@dimen/y1"
         android:layout_below="@+id/tv_item_date"
-        android:background="@color/rgb_f6f6f6" />
+        android:layout_marginLeft="@dimen/x152"
+        android:background="#efefef" />
 </RelativeLayout>

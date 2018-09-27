@@ -30,6 +30,8 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     public void initView(Bundle savedInstanceState) {
+        //navigation透明
+
     }
 
     @Override

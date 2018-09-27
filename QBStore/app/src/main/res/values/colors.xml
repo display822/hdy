@@ -150,6 +150,7 @@
     <color name="rgb_333333">#333333</color><!--文字色 -->
     <color name="rgb_666666">#666666</color><!--文字色 -->
     <color name="rgb_999999">#999999</color><!--文字色 -->
+    <color name="rgb_9d9d9d">#9d9d9d</color><!--文字色 -->
     <color name="rgb_eeeeee">#eeeeee</color><!--文字色 -->
     <color name="rgb_f6f6f6">#f6f6f6</color><!--背景色 -->
     <color name="rgb_e6e6e6">#e6e6e6</color><!--背景色 -->
