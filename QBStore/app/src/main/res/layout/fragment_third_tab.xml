@@ -3,9 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <include layout="@layout/layout_toobar" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/rgb_eeeeee" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/fb"
+        android:text="市场"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/rgb_e2e2e2"
+        />
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/srl_content_view"
         android:layout_width="match_parent"

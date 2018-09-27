@@ -8,7 +8,10 @@
     <include layout="@layout/include_toobar_top_view" />
 
     <include layout="@layout/layout_toobar" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/rgb_e2e2e2"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -56,8 +56,6 @@ public class FourthTabFragment extends BaseFragment {
     RelativeLayout mRlQrcode;
     @BindView(R.id.rl_quit)
     RelativeLayout mRlQuit;
-    @BindView(R.id.rl_vip_content)
-    RelativeLayout mRlVipContent;
     @BindView(R.id.tv_leve)
     TextView mTvLeve;
     @BindView(R.id.tv_real_name)
@@ -142,7 +140,7 @@ public class FourthTabFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.rl_real_name, R.id.rl_address, R.id.rl_bonus, R.id.rl_question, R.id.rl_change_psw, R.id.rl_qrcode, R.id.rl_quit, R.id.rl_vip_content, R.id.rl_pay_address})
+    @OnClick({R.id.rl_real_name, R.id.rl_address, R.id.rl_bonus, R.id.rl_question, R.id.rl_change_psw, R.id.rl_qrcode, R.id.rl_quit,R.id.rl_vip_content, R.id.rl_pay_address})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.rl_real_name:

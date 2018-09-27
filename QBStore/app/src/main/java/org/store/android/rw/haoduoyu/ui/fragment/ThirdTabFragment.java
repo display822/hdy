@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.blankj.utilcode.util.ActivityUtils;
 import com.blankj.utilcode.util.LogUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.gyf.barlibrary.ImmersionBar;
 
 import org.store.android.rw.haoduoyu.adapter.ThirdTabFragmentAdapter;
 import org.store.android.rw.haoduoyu.widget.utils.UIUtils;
@@ -36,12 +37,6 @@ import butterknife.BindView;
 public class ThirdTabFragment extends BaseFragment implements BaseQuickAdapter.OnItemClickListener,  SwipeRefreshLayout.OnRefreshListener {
 
 
-    @BindView(R.id.toolbar_title)
-    TextView mToolbarTitle;
-    @BindView(R.id.toolbar_subtitle)
-    TextView mToolbarSubtitle;
-    @BindView(R.id.toolbar)
-    Toolbar mToolbar;
     @BindView(R.id.rlv_content_view)
     RecyclerView mRlvContentView;
     @BindView(R.id.srl_content_view)
@@ -62,8 +57,6 @@ public class ThirdTabFragment extends BaseFragment implements BaseQuickAdapter.O
 
     @Override
     protected void initView() {
-        mToolbar.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.rgb_dd3217));
-        mToolbarTitle.setText("市场");
         initAdapter();
     }
 

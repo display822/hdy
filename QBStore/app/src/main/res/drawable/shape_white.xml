@@ -3,14 +3,14 @@
     android:shape="rectangle">
 
     <!-- 填充颜色 -->
-    <solid android:color="@color/white"/>
+    <solid android:color="#f4f8f8"/>
 
     <!-- 矩形的圆角半径 -->
-    <corners android:radius="10dp" />
+    <corners android:radius="5dp" />
 
     <padding
-        android:right="10dp"
-        android:left="10dp"/>
+        android:right="5dp"
+        android:left="2dp"/>
 
 
 </shape>
