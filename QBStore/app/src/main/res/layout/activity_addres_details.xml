@@ -2,13 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/rgb_f6f6f6"
+    android:background="@color/rgb_ebeff2"
     android:orientation="vertical">
 
     <include layout="@layout/include_toobar_top_view" />
 
     <include layout="@layout/layout_toobar" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/rgb_ebeff2"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +23,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/y20"
             android:background="@color/white"
             android:orientation="vertical"
             android:paddingLeft="@dimen/x24"
@@ -40,7 +43,7 @@
 
                 <EditText
                     android:id="@+id/et_receiver_name"
-                    android:layout_marginLeft="@dimen/x42"
+                    android:layout_marginLeft="@dimen/x80"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
@@ -55,7 +58,7 @@
             <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/y1"
-            android:background="@color/rgb_e2e2e2" />
+            android:background="@color/rgb_ebeff2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,14 +75,14 @@
 
                 <EditText
                     android:id="@+id/et_receiver_phone"
-                    android:layout_marginLeft="@dimen/x42"
+                    android:layout_marginLeft="@dimen/x80"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:background="@null"
                     android:maxLength="11"
                     android:gravity="center_vertical"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_999999"
                     android:hint="@string/addres_details_activity_phone_hint"
                     android:textColorHint="@color/rgb_999999"
                     android:textSize="14sp" />
@@ -88,7 +91,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y1"
-                android:background="@color/rgb_e2e2e2" />
+                android:background="@color/rgb_ebeff2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,21 +108,21 @@
 
                 <EditText
                     android:id="@+id/et_province"
-                    android:layout_marginLeft="@dimen/x42"
+                    android:layout_marginLeft="@dimen/x80"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:background="@null"
                     android:hint="@string/addres_details_activity_province_hint"
                     android:gravity="center_vertical"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_999999"
                     android:textColorHint="@color/rgb_999999"
                     android:textSize="14sp" />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y1"
-                android:background="@color/rgb_e2e2e2" />
+                android:background="@color/rgb_ebeff2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -136,21 +139,21 @@
 
                 <EditText
                     android:id="@+id/et_city"
-                    android:layout_marginLeft="@dimen/x42"
+                    android:layout_marginLeft="@dimen/x80"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:background="@null"
                     android:hint="@string/addres_details_activity_city_hint"
                     android:gravity="center_vertical"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_999999"
                     android:textColorHint="@color/rgb_999999"
                     android:textSize="14sp" />
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y1"
-                android:background="@color/rgb_e2e2e2" />
+                android:background="@color/rgb_ebeff2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -167,20 +170,17 @@
 
                 <EditText
                     android:id="@+id/et_address"
-                    android:layout_marginLeft="@dimen/x42"
+                    android:layout_marginLeft="@dimen/x80"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:background="@null"
                     android:gravity="center_vertical"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_999999"
                     android:hint="@string/addres_details_activity_address_hint"
                     android:textColorHint="@color/rgb_999999"
                     android:textSize="14sp" />
             </LinearLayout>
-
-
-
 
         </LinearLayout>
 
@@ -189,7 +189,7 @@
             android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y88"
-            android:layout_marginTop="@dimen/y60"
+            android:layout_marginTop="@dimen/y220"
             android:gravity="center"
             android:layout_marginLeft="@dimen/x48"
             android:layout_marginRight="@dimen/x48"
