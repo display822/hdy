@@ -47,9 +47,9 @@ public class FirstTabFragment extends BaseFragment implements View.OnClickListen
     @BindView(R.id.rlv_content_view)
     RecyclerView mRlvContentView;
     @BindView(R.id.ll_my_wallet_content)
-    LinearLayout mLlMyWalletContent;
+    RelativeLayout mLlMyWalletContent;
     @BindView(R.id.ll_my_warehouse_content)
-    LinearLayout mLlMyWarehouseContent;
+    RelativeLayout mLlMyWarehouseContent;
     private FirstTabFragmentAdapter mAdapter;
     private ViewHolder mHeadHolder;
     private Intent mIntent;

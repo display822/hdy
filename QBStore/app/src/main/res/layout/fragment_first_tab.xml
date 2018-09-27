@@ -4,71 +4,116 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y340"
+        android:src="@mipmap/home_banner"
+        android:scaleType="fitXY"
+        />
+
     <!--头部-->
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rl_header_content"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y338"
-        android:background="@color/rgb_dd3217">
+        android:layout_height="@dimen/y160"
+        android:orientation="horizontal"
+        android:background="@color/white">
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/ll_my_wallet_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="@dimen/y60"
-            android:layout_marginLeft="@dimen/x128"
-            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x90"
-                android:layout_height="@dimen/x90"
-                android:scaleType="center"
-                android:src="@mipmap/first_wallet_ico" />
+                android:id="@+id/wdqb"
+                android:layout_width="@dimen/y80"
+                android:layout_height="@dimen/y80"
+                android:scaleType="fitXY"
+                android:src="@mipmap/first_wallet_ico"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x65"
+                />
 
+            <TextView
+                android:id="@+id/wdqbtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/wdqb"
+                android:layout_marginTop="@dimen/y40"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="@dimen/x22"
+                android:text="@string/first_fragment_wdqb"
+                android:textColor="#343434"
+                android:textSize="16sp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/x20"
-                android:includeFontPadding="false"
-                android:text="@string/first_fragment_wdqb"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
+                android:layout_below="@id/wdqbtv"
+                android:layout_toRightOf="@id/wdqb"
+                android:layout_marginLeft="@dimen/x22"
+                android:layout_marginTop="@dimen/y10"
+                android:text="我的资金统计"
+                android:textSize="13sp"
+                android:textColor="#a1a1a1"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="@dimen/y66"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_home_dash"
+            />
+        <RelativeLayout
             android:id="@+id/ll_my_warehouse_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="@dimen/y60"
-            android:layout_marginRight="@dimen/x128"
-            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x90"
-                android:scaleType="center"
-                android:layout_height="@dimen/x90"
+                android:id="@+id/wdck"
+                android:layout_width="@dimen/y80"
+                android:layout_height="@dimen/y80"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x65"
                 android:src="@mipmap/first_warehouse_ico" />
 
             <TextView
+                android:id="@+id/wdqcktv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/x20"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_toRightOf="@id/wdck"
                 android:includeFontPadding="false"
+                android:layout_marginLeft="@dimen/x22"
                 android:text="@string/first_fragment_grck"
-                android:textColor="@color/white"
+                android:textColor="#343434"
                 android:textSize="16sp" />
-        </LinearLayout>
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wdqcktv"
+                android:layout_toRightOf="@id/wdck"
+                android:layout_marginLeft="@dimen/x22"
+                android:layout_marginTop="@dimen/y10"
+                android:text="我的产品库存"
+                android:textSize="13sp"
+                android:textColor="#a1a1a1"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_content_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y28"
+        />
 
 </LinearLayout>

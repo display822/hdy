@@ -150,6 +150,7 @@
     <color name="rgb_2dbe8d">#2dbe8d</color><!--铺色 -->
     <color name="rgb_ff9906">#ff9906</color><!--铺色 -->
     <color name="rgb_333333">#333333</color><!--文字色 -->
+    <color name="rgb_222222">#222222</color><!--文字色 -->
     <color name="rgb_3f454c">#3f454c</color><!--文字色 -->
     <color name="rgb_434343">#434343</color><!--文字色 -->
     <color name="rgb_666666">#666666</color><!--文字色 -->

@@ -11,7 +11,7 @@ import org.store.android.rw.haoduoyu.widget.utils.GlideUtils;
 
 public class MyOrderHistoryAdapter extends BaseQuickAdapter<OrderListData, BaseViewHolder> {
     public MyOrderHistoryAdapter() {
-        super(R.layout.item_product_details);
+        super(R.layout.item_product_new);
     }
 
 

@@ -11,11 +11,8 @@ import org.store.android.rw.haoduoyu.widget.utils.GlideUtils;
 
 public class FirstTabFragmentAdapter extends BaseQuickAdapter<OrderListData, BaseViewHolder> {
     public FirstTabFragmentAdapter() {
-        super(R.layout.item_product_details);
-
-
+        super(R.layout.item_product_new);
     }
-
 
     @Override
     protected void convert(BaseViewHolder helper, OrderListData item) {
@@ -27,8 +24,8 @@ public class FirstTabFragmentAdapter extends BaseQuickAdapter<OrderListData, Bas
                 .setVisible(R.id.tv_item_order_type, true);
         helper.setText(R.id.tv_item_price, item.getGetPrice())
                 .setText(R.id.tv_item_title, item.getProductName())
-                .setText(R.id.tv_item_date, item.getGetDate())
-                .setText(R.id.tv_item_seller, orderType == 0 ? item.getSelllerUserCode() : item.getBuyerUserCode())
+                .setText(R.id.tv_item_date, "时间: "+item.getGetDate())
+                .setText(R.id.tv_item_seller, orderType == 0 ? "电话: "+item.getSelllerUserCode() : "电话: "+item.getBuyerUserCode())
                 .setText(R.id.tv_item_type, orderType == 0 ? "买入交易" : "卖出交易")
                 .setText(R.id.tv_item_order_type, getOrderText(orderType, item.getStatus(), item.getIsCheat()));
         helper.setTextColor(R.id.tv_item_order_type, Color.parseColor(getTypeColor(item.getStatus())));

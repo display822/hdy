@@ -4,17 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-
     <!--钱包商城-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/y40"
-        android:paddingTop="@dimen/y40">
-
-
+        android:paddingBottom="@dimen/y25"
+        android:background="@color/white"
+        android:paddingTop="@dimen/y25">
         <LinearLayout
             android:id="@+id/ll_wallet_store"
             android:layout_width="0dp"
@@ -24,9 +21,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x88"
-                android:layout_height="@dimen/x88"
-                android:scaleType="center"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:scaleType="fitXY"
                 android:src="@mipmap/first_wallet_store_ico" />
 
             <TextView
@@ -35,7 +32,7 @@
                 android:layout_marginTop="@dimen/y24"
                 android:includeFontPadding="false"
                 android:text="@string/first_fragment_qbsc"
-                android:textColor="@color/black"
+                android:textColor="#333333"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -49,9 +46,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x88"
-                android:layout_height="@dimen/x88"
-                android:scaleType="center"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:scaleType="fitXY"
                 android:src="@mipmap/first_integral_ico" />
 
             <TextView
@@ -60,7 +57,7 @@
                 android:layout_marginTop="@dimen/y24"
                 android:includeFontPadding="false"
                 android:text="@string/first_fragment_jfsc"
-                android:textColor="@color/black"
+                android:textColor="#333333"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -74,9 +71,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x88"
-                android:layout_height="@dimen/x88"
-                android:scaleType="center"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:scaleType="fitXY"
                 android:src="@mipmap/first_neophyte_ico" />
 
             <TextView
@@ -85,7 +82,7 @@
                 android:layout_marginTop="@dimen/y24"
                 android:includeFontPadding="false"
                 android:text="@string/first_fragment_xsqd"
-                android:textColor="@color/black"
+                android:textColor="#333333"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -99,9 +96,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x88"
-                android:layout_height="@dimen/x88"
-                android:scaleType="center"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x60"
+                android:scaleType="fitXY"
                 android:src="@mipmap/first_sign_in_ico" />
 
             <TextView
@@ -111,7 +108,7 @@
                 android:layout_marginTop="@dimen/y24"
                 android:includeFontPadding="false"
                 android:text="@string/first_fragment_jrwqd"
-                android:textColor="@color/black"
+                android:textColor="#333333"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -120,28 +117,34 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="@dimen/x16"
-        android:background="@color/rgb_f6f6f6" />
+        android:layout_height="@dimen/y20"
+        android:background="#f8f9fb" />
 
     <!--交易记录-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y281"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y140"
+            android:layout_height="@dimen/y150"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:id="@+id/rl_transaction_history"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:background="#f3f4f5"
                 android:layout_weight="1"
-                android:paddingLeft="@dimen/x24"
-                android:paddingRight="@dimen/x24">
-
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                >
                 <TextView
                     android:id="@+id/tv_transaction"
                     android:layout_width="wrap_content"
@@ -149,9 +152,8 @@
                     android:layout_marginTop="@dimen/y40"
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_jyjl"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_222222"
                     android:textSize="15sp" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -160,34 +162,27 @@
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_wdscjy"
                     android:textColor="@color/rgb_999999"
-                    android:textSize="10sp" />
-
-
+                    android:textSize="12sp" />
                 <ImageView
-                    android:layout_width="@dimen/x88"
-                    android:layout_height="@dimen/x88"
+                    android:layout_width="@dimen/x126"
+                    android:layout_height="@dimen/x126"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="center"
                     android:src="@mipmap/first_transaction_ico" />
 
-
             </RelativeLayout>
-
-            <View
-                android:layout_width="@dimen/y1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/y24"
-                android:background="@color/rgb_e2e2e2" />
 
             <RelativeLayout
                 android:id="@+id/rl_exchange_history"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:background="#f3f4f5"
                 android:layout_weight="1"
-                android:paddingLeft="@dimen/x24"
-                android:paddingRight="@dimen/x24">
-
+                android:layout_marginLeft="@dimen/x20"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                >
                 <TextView
                     android:id="@+id/tv_exchange"
                     android:layout_width="wrap_content"
@@ -195,7 +190,7 @@
                     android:layout_marginTop="@dimen/y40"
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_dhjl"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_222222"
                     android:textSize="15sp" />
 
                 <TextView
@@ -206,12 +201,12 @@
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_wdscjy"
                     android:textColor="@color/rgb_999999"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
 
 
                 <ImageView
-                    android:layout_width="@dimen/x88"
-                    android:layout_height="@dimen/x88"
+                    android:layout_width="@dimen/x126"
+                    android:layout_height="@dimen/x126"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="center"
@@ -221,22 +216,21 @@
             </RelativeLayout>
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/y1"
-            android:background="@color/rgb_e2e2e2" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y140">
+            android:layout_height="@dimen/y150"
+            android:layout_marginTop="@dimen/y10"
+            android:orientation="horizontal"
+            >
 
             <RelativeLayout
                 android:id="@+id/rl_notify"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingLeft="@dimen/x24"
-                android:paddingRight="@dimen/x24">
+                android:background="#f3f4f5"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/tv_notify"
@@ -245,7 +239,7 @@
                     android:layout_marginTop="@dimen/y40"
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_tzgg"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_222222"
                     android:textSize="15sp" />
 
                 <TextView
@@ -256,12 +250,12 @@
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_zxdt"
                     android:textColor="@color/rgb_999999"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
 
 
                 <ImageView
-                    android:layout_width="@dimen/x88"
-                    android:layout_height="@dimen/x88"
+                    android:layout_width="@dimen/x126"
+                    android:layout_height="@dimen/x126"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="center"
@@ -270,19 +264,15 @@
 
             </RelativeLayout>
 
-            <View
-                android:layout_width="@dimen/y1"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/y24"
-                android:background="@color/rgb_e2e2e2" />
-
             <RelativeLayout
                 android:id="@+id/rl_qrcode"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingLeft="@dimen/x24"
-                android:paddingRight="@dimen/x24">
+                android:background="#f3f4f5"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/tv_qrcode"
@@ -291,7 +281,7 @@
                     android:layout_marginTop="@dimen/y40"
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_tgewm"
-                    android:textColor="@color/rgb_333333"
+                    android:textColor="@color/rgb_222222"
                     android:textSize="15sp" />
 
                 <TextView
@@ -302,23 +292,17 @@
                     android:includeFontPadding="false"
                     android:text="@string/first_fragment_hqgdkf"
                     android:textColor="@color/rgb_999999"
-                    android:textSize="10sp" />
-
+                    android:textSize="12sp" />
 
                 <ImageView
-                    android:layout_width="@dimen/x88"
-                    android:layout_height="@dimen/x88"
+                    android:layout_width="@dimen/x126"
+                    android:layout_height="@dimen/x126"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:scaleType="center"
                     android:src="@mipmap/first_qrcode_ico" />
-
-
             </RelativeLayout>
-
         </LinearLayout>
-
-
     </LinearLayout>
 
 
@@ -328,25 +312,26 @@
         android:layout_marginLeft="@dimen/x24"
         android:layout_marginRight="@dimen/x24"
         android:scaleType="fitXY"
+        android:visibility="gone"
         android:src="@mipmap/first_head_banner_ico" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y90"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/y20"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y16"
         android:paddingLeft="@dimen/x24"
         android:paddingRight="@dimen/x24">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/first_fragment_wddd"
             android:textColor="@color/rgb_333333"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
