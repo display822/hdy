@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/y36"
+        android:layout_marginTop="@dimen/y62"
         android:orientation="vertical"
         android:paddingLeft="@dimen/x48"
         android:paddingRight="@dimen/x48">
@@ -20,36 +20,66 @@
             android:includeFontPadding="false"
             android:textColor="@color/rgb_333333"
             android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y36"
+        android:layout_marginTop="@dimen/y24"
+        android:paddingLeft="@dimen/x48"
+        android:paddingRight="@dimen/x48"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="￥"
+                android:textColor="#ff4444"
+                />
+            <TextView
+                android:id="@+id/tv_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="123"
+                android:textColor="#ff4444"
+                android:textSize="23sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=".00"
+                android:textColor="#ff4444"
+                />
+        </LinearLayout>
 
 
         <TextView
             android:id="@+id/tv_details_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/x108"
+            android:layout_height="@dimen/y35"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:includeFontPadding="false"
-            android:textColor="@color/rgb_2dbe8d"
-            android:textSize="12sp" />
-
-
+            android:textColor="#80da91"
+            android:background="@drawable/shape_ware_status"
+            android:gravity="center"
+            android:text="待售"
+            android:textSize="13sp" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/tv_details_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/y36"
-        android:layout_marginLeft="@dimen/x48"
-        android:layout_marginTop="@dimen/y24"
-        android:includeFontPadding="false"
-        android:textColor="@color/rgb_dd3217"
-        android:textSize="24sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/y16"
-        android:background="@color/rgb_f6f6f6" />
+        android:background="@color/rgb_ebeff2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,25 +92,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/y32"
-            android:layout_marginTop="@dimen/y32"
+            android:layout_marginBottom="@dimen/y44"
+            android:layout_marginTop="@dimen/y50"
             android:includeFontPadding="false"
             android:text="商品详情"
             android:textColor="@color/rgb_333333"
-            android:textSize="16sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/y1"
-            android:background="@color/rgb_e2e2e2" />
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/tv_details_context"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/y32"
-            android:textColor="@color/rgb_666666"
-            android:textSize="12sp" />
+            android:layout_marginTop="@dimen/y10"
+            android:textColor="#4d4d4d"
+            android:lineSpacingExtra="@dimen/y8"
+            android:textSize="15sp" />
     </LinearLayout>
 
 

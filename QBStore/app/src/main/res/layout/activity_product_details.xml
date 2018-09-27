@@ -5,14 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <include layout="@layout/include_toobar_top_view" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/fb"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="商品详情"
+            android:textSize="20sp"
+            android:textColor="@color/rgb_333333"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="10dp"
+            />
+        <ImageView
+            android:id="@+id/mback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/gray_right_back"
+            android:rotation="180"
+            />
+    </RelativeLayout>
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         tools:ignore="MergeRootFrame">
-
-
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
@@ -22,68 +45,17 @@
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/toolbar_layout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:contentScrim="@color/rgb_dd3217"
+                android:layout_height="200dp"
+                app:contentScrim="@color/fb"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:toolbarId="@+id/toolbar">
-
+                <!--app:toolbarId="@+id/toolbar">-->
                 <ImageView
                     android:id="@+id/iv_details_bg"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="200dp"
                     android:background="@color/white"
                     android:scaleType="centerCrop" />
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/y88"
-                    app:contentInsetStart="0dp"
-                    app:layout_collapseMode="pin">
-
-
-                    <ImageView
-                        android:id="@+id/toobar_left_back"
-                        android:layout_width="@dimen/y88"
-                        android:layout_height="@dimen/y88"
-                        android:padding="12dp"
-                        android:scaleType="center"
-                        android:src="@mipmap/back_white_icon" />
-
-                    <TextView
-                        android:id="@+id/toolbar_title"
-                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:ellipsize="end"
-                        android:lines="1"
-                        android:scrollHorizontally="true"
-                        android:textColor="@color/white" />
-
-
-                    <TextView
-                        android:id="@+id/toolbar_subtitle"
-                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
-                        android:layout_width="@dimen/y88"
-                        android:layout_height="@dimen/y88"
-                        android:layout_gravity="right"
-                        android:gravity="center_vertical"
-                        android:lines="1"
-                        android:paddingRight="10dp"
-                        android:textColor="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/toolbar_right_button"
-                        android:layout_width="@dimen/y88"
-                        android:layout_height="@dimen/y88"
-                        android:layout_gravity="end"
-                        android:layout_marginRight="10dp"
-                        android:textColor="@color/white"
-                        android:visibility="gone" />
-
-                </android.support.v7.widget.Toolbar>
-
 
             </android.support.design.widget.CollapsingToolbarLayout>
 

@@ -35,16 +35,16 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 public class ProductDetailsActivity extends BaseActivity {
-    @BindView(R.id.toobar_left_back)
-    ImageView mToobarLeftBack;
-    @BindView(R.id.toolbar_title)
-    TextView mToolbarTitle;
-    @BindView(R.id.toolbar_subtitle)
-    TextView mToolbarSubtitle;
-    @BindView(R.id.toolbar_right_button)
-    ImageView mToolbarRightButton;
-    @BindView(R.id.toolbar)
-    Toolbar mToolbar;
+//    @BindView(R.id.toobar_left_back)
+//    ImageView mToobarLeftBack;
+//    @BindView(R.id.toolbar_title)
+//    TextView mToolbarTitle;
+//    @BindView(R.id.toolbar_subtitle)
+//    TextView mToolbarSubtitle;
+//    @BindView(R.id.toolbar_right_button)
+//    ImageView mToolbarRightButton;
+//    @BindView(R.id.toolbar)
+//    Toolbar mToolbar;
     @BindView(R.id.toolbar_layout)
     CollapsingToolbarLayout mToolbarLayout;
     @BindView(R.id.app_bar)
@@ -65,6 +65,8 @@ public class ProductDetailsActivity extends BaseActivity {
     Button mBtnSubmit;
     @BindView(R.id.btn_sale)
     Button mBtnSale;
+    @BindView(R.id.mback)
+    ImageView mback;
     private BasePostData mTokenData;
     private int mCategory; //商品状态
     private String mBuyer;
@@ -78,6 +80,12 @@ public class ProductDetailsActivity extends BaseActivity {
     @Override
     public void initEvent() {
         super.initEvent();
+        mback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     @Override
@@ -123,9 +131,9 @@ public class ProductDetailsActivity extends BaseActivity {
 
     @Override
     public void initView(Bundle savedInstanceState) {
-        setSupportActionBar(mToolbar);
+//        setSupportActionBar(mToolbar);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("商品详情");
+//        actionBar.setTitle("商品详情");
         mToolbarLayout.setExpandedTitleColor(Color.TRANSPARENT);//设置展开后标题的颜色
         mToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);//设置收缩后标题的颜色
         mToolbarLayout.setExpandedTitleGravity(Gravity.START);
@@ -136,8 +144,12 @@ public class ProductDetailsActivity extends BaseActivity {
     @Override
     protected void initImmersionBar() {
         mImmersionBar = ImmersionBar.with(this);
+        View top_view = findViewById(R.id.top_view);
+        if (top_view != null) {
+            mImmersionBar.statusBarView(top_view).statusBarColor(R.color.rgb_eeeeee);
+        }
         mImmersionBar.init();
-        mImmersionBar.titleBar(mToolbar).init();
+//        mImmersionBar.titleBar(mToolbar).init();
     }
 
 
