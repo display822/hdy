@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2f2"
     android:orientation="vertical">
 
     <include layout="@layout/include_toobar_top_view" />
@@ -12,8 +13,8 @@
     <RelativeLayout
         android:id="@+id/rl_header_content"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y200"
-        android:background="@color/rgb_dd3217"
+        android:layout_height="@dimen/y300"
+        android:background="@mipmap/jfbg"
         android:paddingLeft="@dimen/x24"
         android:paddingRight="@dimen/x24">
 
@@ -21,32 +22,47 @@
             android:id="@+id/tv_header_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/tv_header_price"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="@dimen/y24"
+            android:layout_centerHorizontal="true"
+           android:layout_marginTop="@dimen/y70"
             android:includeFontPadding="false"
             android:text="@string/my_wallet_item_qbye"
-            android:textColor="@color/white"
-            android:textSize="12sp" />
-
-
-        <TextView
-            android:id="@+id/tv_header_price"
+            android:textColor="#cc9d6e"
+            android:textSize="17sp" />
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="@dimen/y24"
-            android:includeFontPadding="false"
-            android:textColor="@color/white"
-            android:textSize="36sp" />
-
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_header_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y60"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/jfdetail"
+                />
+            <TextView
+                android:id="@+id/tv_header_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="@dimen/x40"
+                android:textColor="#cda172"
+                android:text="111"
+                android:textSize="36sp" />
+        </LinearLayout>
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_content_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@drawable/shape_second"
+        />
 
 
 </LinearLayout>

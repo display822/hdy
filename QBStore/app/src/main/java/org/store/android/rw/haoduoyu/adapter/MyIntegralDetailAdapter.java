@@ -13,7 +13,7 @@ public class MyIntegralDetailAdapter extends BaseQuickAdapter<MyWalletDetail, Ba
 
     @Override
     protected void convert(BaseViewHolder helper, MyWalletDetail item) {
-        helper.setImageResource(R.id.item_type_ico, R.mipmap.item_deal);
+//        helper.setImageResource(R.id.item_type_ico, R.mipmap.item_deal);
         helper.setText(R.id.tv_item_date, item.getGetDate())
                 .setText(R.id.tv_item_price, (item.getNumber() > 0 ? "+" : "") + item.getNumber())
                 .setText(R.id.tv_item_title, getTypeText(item.getSource()));

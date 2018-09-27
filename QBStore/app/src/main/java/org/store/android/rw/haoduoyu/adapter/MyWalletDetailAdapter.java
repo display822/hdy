@@ -17,7 +17,7 @@ public class MyWalletDetailAdapter extends BaseQuickAdapter<MyWalletDetail, Base
 
     @Override
     protected void convert(BaseViewHolder helper, MyWalletDetail item) {
-        helper.setImageResource(R.id.item_type_ico, item.getSource() == 1 ? R.mipmap.item_signin : R.mipmap.item_deal);
+//        helper.setImageResource(R.id.item_type_ico, item.getSource() == 1 ? R.mipmap.item_signin : R.mipmap.item_deal);
         helper.setText(R.id.tv_item_date, item.getGetDate())
                 .setText(R.id.tv_item_price, (item.getAmount() > 0 ? "+" : "") + item.getAmount())
                 .setText(R.id.tv_item_title, getTypeText(item.getSource()));

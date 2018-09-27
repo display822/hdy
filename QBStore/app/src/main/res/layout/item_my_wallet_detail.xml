@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/x24"
-    android:paddingRight="@dimen/x24">
-
-    <ImageView
-        android:id="@+id/item_type_ico"
-        android:layout_width="@dimen/x80"
-        android:layout_height="@dimen/x80"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="@dimen/y36"
-        android:layout_marginTop="@dimen/y36" />
+    android:layout_height="@dimen/y134"
+    android:paddingLeft="@dimen/x40"
+    android:paddingRight="@dimen/x40">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/x24"
         android:layout_toLeftOf="@+id/tv_item_price"
-        android:layout_toRightOf="@+id/item_type_ico"
         android:orientation="vertical">
-
-
         <TextView
             android:id="@+id/tv_item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
-            android:textColor="@color/black"
+            android:textColor="#434343"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_item_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/y10"
+            android:layout_marginTop="@dimen/y18"
             android:includeFontPadding="false"
-            android:textColor="@color/rgb_999999"
-            android:textSize="12sp" />
+            android:textColor="@color/rgb_9d9d9d"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_item_name"
@@ -59,8 +47,8 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:includeFontPadding="false"
-        android:textColor="@color/rgb_dd3217"
-        android:textSize="24sp" />
+        android:textColor="#cc823f"
+        android:textSize="20sp" />
 
     <View
         android:layout_width="match_parent"
