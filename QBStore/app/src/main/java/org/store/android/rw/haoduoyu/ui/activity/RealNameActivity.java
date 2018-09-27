@@ -42,8 +42,6 @@ public class RealNameActivity extends BaseActivity {
     EditText mEtRealName;
     @BindView(R.id.et_card_id)
     EditText mEtCardId;
-    @BindView(R.id.iv_add_ico)
-    ImageView mIvAddIco;
     @BindView(R.id.iv_card_id_pic)
     ImageView mIvCardIdPic;
     @BindView(R.id.rl_card_id_pic)
