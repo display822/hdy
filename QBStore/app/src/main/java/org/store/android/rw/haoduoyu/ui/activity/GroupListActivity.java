@@ -29,7 +29,7 @@ public class GroupListActivity extends BaseActivity implements BaseQuickAdapter.
 
     @Override
     public int getContentViewResId() {
-        return R.layout.activity_base_recyclerview;
+        return R.layout.activity_myagent;
     }
 
     @Override
