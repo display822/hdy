@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/rgb_dd3217"
+        app:contentInsetStart="0dp">
+
+
+        <ImageView
+            android:id="@+id/toobar_left_back"
+            android:layout_width="@dimen/y88"
+            android:layout_height="@dimen/y88"
+            android:padding="12dp"
+            android:scaleType="center"
+             />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/toolbar_subtitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="@dimen/y88"
+            android:layout_height="@dimen/y88"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"
+            android:lines="1"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/toolbar_right_button"
+            android:layout_width="@dimen/y88"
+            android:layout_height="@dimen/y88"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>
+
+
+
+

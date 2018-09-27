@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/x24"
+    android:layout_marginRight="@dimen/x24"
+    android:layout_marginTop="@dimen/y32"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tv_item_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y284"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/test_2_ico" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y284"
+            android:background="#661a1a1a">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y24"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+
+        <TextView
+            android:id="@+id/tv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_price"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="一"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_view"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/rgb_f6f6f6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y20"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

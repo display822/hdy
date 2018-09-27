@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y36"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x48"
+        android:paddingRight="@dimen/x48">
+
+        <TextView
+            android:id="@+id/tv_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/rgb_333333"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_details_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/rgb_2dbe8d"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_details_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y36"
+        android:layout_marginLeft="@dimen/x48"
+        android:layout_marginTop="@dimen/y24"
+        android:includeFontPadding="false"
+        android:textColor="@color/rgb_dd3217"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y16"
+        android:background="@color/rgb_f6f6f6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x48"
+        android:paddingRight="@dimen/x48">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y32"
+            android:layout_marginTop="@dimen/y32"
+            android:includeFontPadding="false"
+            android:text="商品详情"
+            android:textColor="@color/rgb_333333"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/rgb_e2e2e2" />
+
+        <TextView
+            android:id="@+id/tv_details_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y32"
+            android:textColor="@color/rgb_666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

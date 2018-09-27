@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y244"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_item_ico"
+            android:layout_width="@dimen/x240"
+            android:layout_height="@dimen/y180"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x24"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="10dp"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_item_ico"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_item_top_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y40"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="1111122"
+
+                    android:textColor="@color/rgb_dd3217"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_type"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/rgb_bcf3bb"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="冻结中"
+                    android:textColor="@color/rgb_22851b"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_item_top_content"
+                android:layout_marginTop="@dimen/y20"
+                android:includeFontPadding="false"
+                android:textColor="@color/rgb_333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_item_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起始价格:"
+                    android:textColor="@color/rgb_999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$2000"
+                    android:textColor="@color/rgb_333333"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_item_top_content"
+                android:layout_marginTop="@dimen/y20"
+                android:drawableLeft="@mipmap/item_order_person"
+                android:drawablePadding="@dimen/x6"
+                android:includeFontPadding="false"
+                android:textColor="@color/rgb_999999"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_item_date"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_below="@+id/rl_item_top_content">
+
+                <TextView
+                    android:id="@+id/tv_item_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/item_order_date"
+                    android:drawablePadding="@dimen/x6"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/rgb_999999"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_item_order_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:visibility="gone"
+                    android:text="冻结中"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y8"
+        android:background="@color/rgb_f6f6f6" />
+</LinearLayout>
