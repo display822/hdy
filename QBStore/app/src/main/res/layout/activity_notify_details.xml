@@ -26,33 +26,28 @@
                 android:id="@+id/tv_details_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/y32"
+                android:layout_marginTop="@dimen/y74"
                 android:includeFontPadding="false"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="#444444"
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/tv_details_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/y32"
-                android:layout_marginTop="@dimen/y10"
+                android:layout_marginBottom="@dimen/y58"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_gravity="center_horizontal"
                 android:includeFontPadding="false"
-                android:textColor="@color/rgb_999999"
-                android:textSize="12sp" />
+                android:textColor="#666666"
+                android:textSize="13sp" />
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/y8"
-            android:layout_below="@+id/tv_item_date"
-            android:background="@color/rgb_f6f6f6" />
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/y60">
+            android:layout_height="match_parent">
 
 
             <LinearLayout
@@ -66,7 +61,8 @@
                     android:layout_height="match_parent"
                     android:paddingLeft="@dimen/x24"
                     android:paddingRight="@dimen/x24"
-                    android:textColor="@color/black"
+                    android:lineSpacingExtra="@dimen/y4"
+                    android:textColor="#333333"
                     android:textSize="14sp" />
 
 
