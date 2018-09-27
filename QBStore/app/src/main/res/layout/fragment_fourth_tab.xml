@@ -168,7 +168,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/x24"
                     android:layout_toRightOf="@+id/iv_address_ico"
-                    android:text="信息地址"
+                    android:text="地址信息"
                     android:textColor="@color/rgb_333333"
                     android:textSize="13sp" />
 
