@@ -65,8 +65,8 @@
     <string name="register_activity_recommend_hint">请输入推广人手机号码</string>
 
 
-    <string name="group_list_activity_title">我的代理</string>
-    <string name="retail_list_activity_title">我的零售</string>
+    <string name="group_list_activity_title">我的直推</string>
+    <string name="retail_list_activity_title">我的二级</string>
 
 
     <string name="pay_order_activity_pay_title">支付详情</string>

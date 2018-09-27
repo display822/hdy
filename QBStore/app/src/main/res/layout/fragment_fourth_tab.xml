@@ -121,7 +121,33 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="时间"
+                    android:text="注册时间"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/y20"
+                    android:textColor="#dadada"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_signnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/y30"
+                    android:includeFontPadding="false"
+                    android:text="--"
+                    android:textColor="#373737" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用签到次数"
                     android:textSize="14sp"
                     android:layout_marginTop="@dimen/y20"
                     android:textColor="#dadada"

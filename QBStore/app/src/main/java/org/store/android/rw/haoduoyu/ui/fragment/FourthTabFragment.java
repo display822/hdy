@@ -64,6 +64,8 @@ public class FourthTabFragment extends BaseFragment {
     TextView mTvUserCode;
     @BindView(R.id.tv_create_date)
     TextView mTvCreateDate;
+    @BindView(R.id.tv_signnum)
+    TextView mTvSignNum;
     @BindView(R.id.rl_pay_address)
     RelativeLayout mRlPayAddress;
 
@@ -107,6 +109,7 @@ public class FourthTabFragment extends BaseFragment {
                 mTvRealName.setText(data.getRealName());
                 mTvUserCode.setText(data.getUserCode());
                 mTvCreateDate.setText(data.getCreateDate());
+                mTvSignNum.setText(data.getSignCount());
                 mTvRealType.setText(getRealText(mIsValid));
                 mTvRealType.setTextColor(ContextCompat.getColor(getActivity(), mIsValid == 0 ? R.color.rgb_999999 : R.color.rgb_dd3217));
                 return null;

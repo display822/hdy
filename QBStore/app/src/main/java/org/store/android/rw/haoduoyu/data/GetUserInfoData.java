@@ -48,6 +48,7 @@ public class GetUserInfoData {
     private String RegisterLink;
     private int RefereeNum;
     private int RefereeL2Num;
+    private String SignCount;
 
 
     public String getRegisterLink() {
@@ -224,5 +225,13 @@ public class GetUserInfoData {
 
     public void setRefereeL2Num(int RefereeL2Num) {
         this.RefereeL2Num = RefereeL2Num;
+    }
+
+    public String getSignCount() {
+        return SignCount;
+    }
+
+    public void setSignCount(String signCount) {
+        SignCount = signCount;
     }
 }
