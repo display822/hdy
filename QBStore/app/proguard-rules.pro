@@ -186,15 +186,15 @@
 #---------------------------------实体类---------------------------------
 #--------(实体Model不能混淆，否则找不到对应的属性获取不到值)-----
 #
--dontwarn org.store.android.rw.qbstore.data.**
+-dontwarn org.store.android.rw.haoduoyu.data.**
 #对含有反射类的处理
--keep class org.store.android.rw.qbstore.data.** { *; }
+-keep class org.store.android.rw.haoduoyu.data.** { *; }
 
 
 
--keep class org.store.android.rw.qbstore.net.**
--keepclassmembers class org.store.android.rw.qbstore.net.** { *; }
- -dontwarn   org.store.android.rw.qbstore.net.**
+-keep class org.store.android.rw.haoduoyu.net.**
+-keepclassmembers class org.store.android.rw.haoduoyu.net.** { *; }
+ -dontwarn   org.store.android.rw.haoduoyu.net.**
 
 #
 # ----------------------------- 其他的 -----------------------------

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fl_content"
-    tools:context="org.store.android.rw.qbstore.ui.activity.MainActivity">
+    tools:context="org.store.android.rw.haoduoyu.ui.activity.MainActivity">
 
     <!--<include layout="@layout/include_toobar_top_view" />-->
 

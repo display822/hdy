@@ -8,9 +8,13 @@
 
     <include layout="@layout/layout_toobar" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="#dfdfdf"
+        />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_content_view"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/y15"
         android:layout_height="match_parent" />
 </LinearLayout>

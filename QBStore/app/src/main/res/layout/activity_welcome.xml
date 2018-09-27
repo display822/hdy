@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
 
-    <org.store.android.rw.qbstore.widget.CommonVideoView
+    <org.store.android.rw.haoduoyu.widget.CommonVideoView
         android:id="@+id/cv_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
