@@ -24,18 +24,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
-                android:scaleType="fitXY"
                 android:layout_alignParentBottom="true"
-                android:src="@mipmap/order_bottom_shadow"
-                />
+                android:scaleType="fitXY"
+                android:src="@mipmap/order_bottom_shadow" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
-                android:orientation="vertical"
                 android:layout_alignParentBottom="true"
+                android:orientation="vertical"
                 android:paddingLeft="@dimen/x50">
 
                 <LinearLayout
@@ -74,9 +75,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
                     <cn.iwgang.countdownview.CountdownView
                         android:id="@+id/cv_time"
                         android:layout_width="wrap_content"
@@ -95,6 +97,7 @@
                         app:suffixTextSize="13sp"
                         app:timeTextColor="#00ccff"
                         app:timeTextSize="18sp" />
+
                     <TextView
                         android:id="@+id/tv_text_4"
                         android:layout_width="wrap_content"
@@ -109,17 +112,18 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/y20"
-                    android:background="#ebeff2"/>
+                    android:background="#ebeff2" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/x106"
@@ -148,74 +152,86 @@
                         android:textColor="@color/rgb_999999"
                         android:textSize="14sp" />
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/y1"
-                    android:background="@color/rgb_e2e2e2"/>
+                    android:background="@color/rgb_e2e2e2" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/x106"
                     android:background="@color/white"
                     android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/tv_pay_type"
                         android:layout_width="0dp"
-                        android:layout_weight="4"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
                         android:includeFontPadding="false"
-                        android:text="123"
                         android:paddingLeft="@dimen/x22"
+                        android:text="123"
                         android:textColor="@color/rgb_333333"
                         android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/tv_pay_phone"
                         android:layout_width="0dp"
-                        android:layout_weight="4"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
                         android:includeFontPadding="false"
                         android:textColor="@color/rgb_999999"
                         android:textIsSelectable="true"
                         android:textSize="14sp" />
+
                     <TextView
                         android:id="@+id/tv_copy_content"
                         android:layout_width="@dimen/x120"
                         android:layout_height="@dimen/y54"
                         android:layout_gravity="center_vertical"
-                        android:includeFontPadding="false"
                         android:layout_marginRight="@dimen/x30"
-                        android:text="复制"
                         android:background="@drawable/shape_order_copy"
                         android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="复制"
                         android:textColor="@color/rgb_999999"
                         android:textSize="12sp" />
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/y20"
-                    android:background="#ebeff2"/>
+                    android:background="#ebeff2" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/y100"
-                    android:text="付款方式截图"
-                    android:textSize="14sp"
-                    android:textColor="@color/rgb_333333"
                     android:gravity="center_vertical"
                     android:paddingLeft="@dimen/x22"
-                    />
+                    android:text="付款方式截图"
+                    android:textColor="@color/rgb_333333"
+                    android:textSize="14sp" />
+
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/pay_img_rlyt"
+                    android:layout_width="@dimen/x300"
+                    android:layout_height="@dimen/y500"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/y15"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="visible">
+
                     <LinearLayout
                         android:id="@+id/upload_img_rlyt"
                         android:layout_width="@dimen/y242"
                         android:layout_height="@dimen/y242"
-                        android:gravity="center_horizontal"
-                        android:layout_marginLeft="@dimen/x22"
                         android:background="@drawable/shape_rectangle_dash"
-                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y30"
+                        android:gravity="center_horizontal"
                         android:orientation="vertical">
 
                         <ImageView
@@ -235,20 +251,14 @@
                             android:textColor="@color/rgb_999999"
                             android:textSize="16sp" />
                     </LinearLayout>
-                    <RelativeLayout
-                        android:id="@+id/pay_img_rlyt"
-                        android:layout_width="@dimen/x300"
-                        android:layout_height="@dimen/y500"
-                        android:visibility="gone"
-                        android:layout_marginBottom="@dimen/y15"
-                        android:layout_centerHorizontal="true">
-                        <ImageView
-                            android:id="@+id/iv_pay_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY" />
-                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_pay_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
                 </RelativeLayout>
+
             </LinearLayout>
         </ScrollView>
 
