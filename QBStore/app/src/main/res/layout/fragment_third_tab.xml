@@ -6,13 +6,13 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="24dp"
-        android:background="@color/rgb_eeeeee" />
+        android:background="@color/rgb_status" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/fb"
         android:text="市场"
-        android:textSize="20sp"
+        android:textSize="19sp"
         android:textColor="@color/black"
         android:gravity="center"
         />
@@ -27,10 +27,34 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rlv_content_view"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f8f9fb"
+                />
+            <LinearLayout
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="@dimen/x260"
+                    android:layout_height="@dimen/y360"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/empty"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
     </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

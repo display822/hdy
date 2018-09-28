@@ -130,7 +130,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         mImmersionBar = ImmersionBar.with(this);
         View top_view = findViewById(R.id.top_view);
         if (top_view != null) {
-            mImmersionBar.statusBarView(top_view).statusBarColor(R.color.rgb_eeeeee);
+            mImmersionBar.statusBarView(top_view).statusBarColor(R.color.rgb_status);
         }
         mImmersionBar.init();
     }
@@ -167,8 +167,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         mToolbarTitle.setTextColor(ContextCompat.getColor(this, R.color.rgb_333333));
         mToolbarSubTitle.setTextColor(ContextCompat.getColor(this, R.color.rgb_333333));
         if ( isShowBacking()){
-            mToolbarLeftBack.setRotation(180);
-            mToolbarLeftBack.setImageResource(R.mipmap.gray_right_back);
+            mToolbarLeftBack.setImageResource(R.mipmap.back_arrow);
         }
     }
 

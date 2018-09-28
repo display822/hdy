@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f8f9fb"
     android:orientation="vertical">
 
     <ImageView
@@ -29,8 +30,8 @@
 
             <ImageView
                 android:id="@+id/wdqb"
-                android:layout_width="@dimen/y80"
-                android:layout_height="@dimen/y80"
+                android:layout_width="@dimen/y86"
+                android:layout_height="@dimen/y86"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_wallet_ico"
                 android:layout_centerVertical="true"
@@ -76,8 +77,8 @@
 
             <ImageView
                 android:id="@+id/wdck"
-                android:layout_width="@dimen/y80"
-                android:layout_height="@dimen/y80"
+                android:layout_width="@dimen/y86"
+                android:layout_height="@dimen/y86"
                 android:scaleType="fitXY"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/x65"
@@ -109,11 +110,11 @@
         </RelativeLayout>
 
     </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rlv_content_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/y28"
-        />
+        android:layout_marginTop="@dimen/y28" />
 
 </LinearLayout>

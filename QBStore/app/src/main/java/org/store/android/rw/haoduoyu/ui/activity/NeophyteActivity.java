@@ -7,6 +7,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.blankj.utilcode.util.ActivityUtils;
 import com.blankj.utilcode.util.LogUtils;
@@ -35,6 +36,8 @@ public class NeophyteActivity extends BaseActivity implements BaseQuickAdapter.O
     RecyclerView mRlvContentView;
     @BindView(R.id.srl_content_view)
     SwipeRefreshLayout mSrlContentView;
+    @BindView(R.id.emptyView)
+    LinearLayout emptyView;
     private ThirdTabFragmentAdapter mAdapter;
 
     @Override
@@ -82,6 +85,11 @@ public class NeophyteActivity extends BaseActivity implements BaseQuickAdapter.O
                 mSrlContentView.setRefreshing(false);
                 if (mAdapter != null)
                     mAdapter.setNewData(data);
+                if(data.size()==0){
+                    emptyView.setVisibility(View.VISIBLE);
+                }else{
+                    emptyView.setVisibility(View.GONE);
+                }
                 return null;
             }
 

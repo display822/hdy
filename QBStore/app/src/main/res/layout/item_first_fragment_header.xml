@@ -21,8 +21,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x45"
-                android:layout_height="@dimen/x45"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_wallet_store_ico" />
 
@@ -46,8 +46,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x45"
-                android:layout_height="@dimen/x45"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_integral_ico" />
 
@@ -71,8 +71,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x45"
-                android:layout_height="@dimen/x45"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_neophyte_ico" />
 
@@ -96,8 +96,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@dimen/x45"
-                android:layout_height="@dimen/x45"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
                 android:scaleType="fitXY"
                 android:src="@mipmap/first_sign_in_ico" />
 
@@ -164,11 +164,11 @@
                     android:textColor="@color/rgb_999999"
                     android:textSize="12sp" />
                 <ImageView
-                    android:layout_width="@dimen/x126"
-                    android:layout_height="@dimen/x126"
+                    android:layout_width="@dimen/x110"
+                    android:layout_height="@dimen/x110"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
+                    android:scaleType="centerCrop"
                     android:src="@mipmap/first_transaction_ico" />
 
             </RelativeLayout>
@@ -205,11 +205,11 @@
 
 
                 <ImageView
-                    android:layout_width="@dimen/x126"
-                    android:layout_height="@dimen/x126"
+                    android:layout_width="@dimen/x110"
+                    android:layout_height="@dimen/x110"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
+                    android:scaleType="centerCrop"
                     android:src="@mipmap/first_exchange_ico" />
 
 
@@ -219,7 +219,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/y150"
-            android:layout_marginTop="@dimen/y10"
+            android:layout_marginTop="@dimen/y20"
             android:orientation="horizontal"
             >
 
@@ -254,11 +254,11 @@
 
 
                 <ImageView
-                    android:layout_width="@dimen/x126"
-                    android:layout_height="@dimen/x126"
+                    android:layout_width="@dimen/x110"
+                    android:layout_height="@dimen/x110"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
+                    android:scaleType="centerCrop"
                     android:src="@mipmap/first_notify_ico" />
 
 
@@ -295,11 +295,11 @@
                     android:textSize="12sp" />
 
                 <ImageView
-                    android:layout_width="@dimen/x126"
-                    android:layout_height="@dimen/x126"
+                    android:layout_width="@dimen/x110"
+                    android:layout_height="@dimen/x110"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
+                    android:scaleType="centerCrop"
                     android:src="@mipmap/first_qrcode_ico" />
             </RelativeLayout>
         </LinearLayout>

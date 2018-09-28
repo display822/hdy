@@ -44,7 +44,8 @@ public class MyWalletDetailAdapter extends BaseQuickAdapter<MyWalletDetail, Base
                 return "推广奖励";
             case 5:
                 return "用户交易";
-
+            case 6:
+                return "新手抢单消费";
         }
         return "未知状态";
     }

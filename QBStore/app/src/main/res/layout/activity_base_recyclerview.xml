@@ -13,8 +13,28 @@
         android:layout_height="@dimen/y1"
         android:background="#dfdfdf"
         />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rlv_content_view"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="@dimen/x260"
+                android:layout_height="@dimen/y360"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/empty"
+                />
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.ActivityUtils;
@@ -63,13 +64,17 @@ public class PayOrderActivity extends BaseActivity {
     @BindView(R.id.btn_submit)
     Button mBtnSubmit;
     @BindView(R.id.btn_1)
-    Button mBtn1;
+    TextView mBtn1;
     @BindView(R.id.btn_2)
-    Button mBtn2;
+    TextView mBtn2;
     @BindView(R.id.ll_btn_content)
     LinearLayout mLlBtnContent;
     @BindView(R.id.iv_product_img)
     ImageView mIvProductImg;
+    @BindView(R.id.upload_img_rlyt)
+    LinearLayout uploadImgLlyt;
+    @BindView(R.id.pay_img_rlyt)
+    RelativeLayout payImgRlyt;
     private BasePostData mTokenData;
     private int mOrderType; // 买入 0 卖出1
     private int mStatus; //订单状态
@@ -115,8 +120,12 @@ public class PayOrderActivity extends BaseActivity {
                 mProductID = data.getProductID();
                 mIsCheat = data.getIsCheat();
                 GlideUtils.loadImage(PayOrderActivity.this, data.getProductPic(), mIvProductImg);
-                if (data.getStatus() != 0)
+                if (data.getStatus() != 0){
+                    payImgRlyt.setVisibility(View.VISIBLE);
                     GlideUtils.loadImage(PayOrderActivity.this, data.getPayPic(), mIvPayImg);
+                }else{
+                    uploadImgLlyt.setVisibility(View.VISIBLE);
+                }
                 if (mOrderType == 0) {
                     mTvText1.setText(mBuyerText1[mStatus]);
                     mTvText2.setText(data.getSeller());
@@ -129,7 +138,6 @@ public class PayOrderActivity extends BaseActivity {
                         case 0:
                             mCvTime.setVisibility(View.VISIBLE);
                             mBtnSubmit.setVisibility(View.VISIBLE);
-
                             break;
                         case 1:
                             mCvTime.setVisibility(View.VISIBLE);
@@ -165,6 +173,7 @@ public class PayOrderActivity extends BaseActivity {
                     if (mStatus == 1) {
                         mLlBtnContent.setVisibility(View.VISIBLE);
                         if (data.getIsCheat() == 0) {
+                            //隐藏上传图标
                             mBtn1.setVisibility(View.VISIBLE);
                             mBtn2.setVisibility(View.VISIBLE);
                             mBtn2.setText("虚假记录");
@@ -209,10 +218,11 @@ public class PayOrderActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.iv_pay_img, R.id.btn_submit, R.id.btn_1, R.id.btn_2, R.id.tv_pay_phone})
+    @OnClick({R.id.upload_img_rlyt,R.id.iv_pay_img, R.id.btn_submit, R.id.btn_1, R.id.btn_2, R.id.tv_pay_phone,R.id.tv_copy_content})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.iv_pay_img:
+            case R.id.upload_img_rlyt:
                 if (mOrderType == 0 && mStatus == 0) {
                     ActivityUtils.startActivityForResult(this, ImageGridActivity.class, Constant.ORDER_IMG_REQUEST_CODE);
                 }
@@ -238,6 +248,8 @@ public class PayOrderActivity extends BaseActivity {
                             AppActionImpl.getInstance().UploadPayPic(PayOrderActivity.this, tokenData, new BaseHttpCallbackListener<Void>() {
                                 @Override
                                 public Void onSuccess(Void data) {
+                                    uploadImgLlyt.setVisibility(View.GONE);
+                                    payImgRlyt.setVisibility(View.VISIBLE);
                                     mBtnSubmit.setVisibility(View.GONE);
                                     finish();
                                     return null;
@@ -327,7 +339,14 @@ public class PayOrderActivity extends BaseActivity {
                     myClipboard.setPrimaryClip(myClip);
                     ToastUtils.showShort("已复制到剪切板");
                 }
-
+                break;
+            case R.id.tv_copy_content:
+                if (!TextUtils.isEmpty(mTvPayPhone.getText().toString())) {
+                    ClipboardManager myClipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                    ClipData myClip = ClipData.newPlainText("text", mTvPayPhone.getText().toString());
+                    myClipboard.setPrimaryClip(myClip);
+                    ToastUtils.showShort("已复制到剪切板");
+                }
                 break;
         }
     }
@@ -339,6 +358,9 @@ public class PayOrderActivity extends BaseActivity {
             if (data != null && requestCode == Constant.ORDER_IMG_REQUEST_CODE) {
                 ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_RESULT_ITEMS);
                 mImageItem = images.get(0);
+                //选择后隐藏
+                uploadImgLlyt.setVisibility(View.GONE);
+                payImgRlyt.setVisibility(View.VISIBLE);
                 GlideUtils.loadImage(this, mImageItem.path, mIvPayImg);
             }
         }

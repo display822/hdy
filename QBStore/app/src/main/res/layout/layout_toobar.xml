@@ -31,6 +31,7 @@
             android:layout_gravity="center"
             android:ellipsize="end"
             android:lines="1"
+            android:textSize="19sp"
             android:scrollHorizontally="true"
             android:textColor="@color/white"/>
 

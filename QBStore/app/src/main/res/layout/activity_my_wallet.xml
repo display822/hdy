@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toobar_top_view" />
+
+    <include layout="@layout/layout_toobar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="#e2e2e2"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y28"
+        android:background="#f5f5f5"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="#e6e6e6"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y28"
+        android:background="#f5f5f5"
+        />
+</LinearLayout>

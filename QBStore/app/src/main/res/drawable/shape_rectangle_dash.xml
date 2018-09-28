@@ -4,10 +4,10 @@
 
     <!--线宽为dashWith，线之间空隙dashGap，dashGap=0dp时，是实线 -->
     <stroke
-        android:width="@dimen/y1"
+        android:width="@dimen/y2"
         android:color="@color/rgb_999999"
-        android:dashGap="@dimen/y2"
-        android:dashWidth="@dimen/y5"/>
+        android:dashGap="@dimen/y5"
+        android:dashWidth="@dimen/y12"/>
     <!-- 矩形的圆角半径 -->
-    <corners android:radius="5dp" />
+    <corners android:radius="1dp" />
 </shape>

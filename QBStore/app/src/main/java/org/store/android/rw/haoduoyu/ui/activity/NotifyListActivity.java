@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.blankj.utilcode.util.ActivityUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -23,6 +24,8 @@ import butterknife.BindView;
 public class NotifyListActivity extends BaseActivity implements BaseQuickAdapter.OnItemClickListener {
     @BindView(R.id.rlv_content_view)
     RecyclerView mRlvContentView;
+    @BindView(R.id.emptyView)
+    LinearLayout llyt;
     private NotifyListAdapter mAdapter;
     private Intent mIntent;
 
@@ -47,6 +50,11 @@ public class NotifyListActivity extends BaseActivity implements BaseQuickAdapter
             @Override
             public Void onSuccess(List<GetNoticeData> data) {
                 mAdapter.setNewData(data);
+                if(data.size()==0){
+                    llyt.setVisibility(View.VISIBLE);
+                }else{
+                    llyt.setVisibility(View.GONE);
+                }
                 return null;
             }
         });

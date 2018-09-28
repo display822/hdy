@@ -6,6 +6,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.blankj.utilcode.util.ActivityUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -28,6 +29,8 @@ public class MyWareHouseActivity extends BaseActivity implements BaseQuickAdapte
     @BindView(R.id.rlv_content_view)
     RecyclerView mRlvContentView;
     private MyWareHouseAdapter mAdapter;
+    @BindView(R.id.emptyView)
+    public LinearLayout llyt;
 
     @Override
     public int getContentViewResId() {
@@ -55,6 +58,11 @@ public class MyWareHouseActivity extends BaseActivity implements BaseQuickAdapte
             @Override
             public Void onSuccess(List<ProductDetailsData> data) {
                 mAdapter.setNewData(data);
+                if(data.size()==0){
+                    llyt.setVisibility(View.VISIBLE);
+                }else{
+                    llyt.setVisibility(View.GONE);
+                }
                 return null;
             }
         });

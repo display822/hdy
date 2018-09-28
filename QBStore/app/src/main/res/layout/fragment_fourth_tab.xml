@@ -7,13 +7,13 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="24dp"
-        android:background="@color/rgb_eeeeee" />
+        android:background="@color/rgb_status" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/fb"
         android:text="我的"
-        android:textSize="20sp"
+        android:textSize="19sp"
         android:textColor="@color/black"
         android:gravity="center"
         />
@@ -70,11 +70,11 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/y1"
-            android:background="@color/rgb_e2e2e2"/>
+            android:background="#e6e6e6"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y130"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
             <LinearLayout
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:includeFontPadding="false"
-                    android:layout_marginTop="@dimen/y30"
+                    android:layout_marginTop="@dimen/y32"
                     android:text="111111111"
                     android:textSize="15sp"
                     android:textColor="#373737" />
@@ -98,8 +98,9 @@
                     android:layout_height="wrap_content"
                     android:text="用户名"
                     android:textSize="14sp"
-                    android:layout_marginTop="@dimen/y20"
-                    android:textColor="#dadada"
+                    android:layout_marginTop="@dimen/y32"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:textColor="#9c9c9c"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
@@ -114,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/y30"
+                    android:layout_marginTop="@dimen/y32"
                     android:includeFontPadding="false"
                     android:text="--"
                     android:textColor="#373737" />
@@ -123,8 +124,9 @@
                     android:layout_height="wrap_content"
                     android:text="注册时间"
                     android:textSize="14sp"
-                    android:layout_marginTop="@dimen/y20"
-                    android:textColor="#dadada"
+                    android:layout_marginTop="@dimen/y32"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:textColor="#9c9c9c"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
@@ -140,7 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/y30"
+                    android:layout_marginTop="@dimen/y32"
                     android:includeFontPadding="false"
                     android:text="--"
                     android:textColor="#373737" />
@@ -149,8 +151,9 @@
                     android:layout_height="wrap_content"
                     android:text="可用签到次数"
                     android:textSize="14sp"
-                    android:layout_marginTop="@dimen/y20"
-                    android:textColor="#dadada"
+                    android:layout_marginTop="@dimen/y32"
+                    android:layout_marginBottom="@dimen/y20"
+                    android:textColor="#9c9c9c"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
@@ -175,6 +178,7 @@
                 android:id="@+id/rl_real_name"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40">
 
@@ -182,8 +186,8 @@
                     android:id="@+id/iv_real_name_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_real_ico" />
 
                 <TextView
@@ -228,6 +232,7 @@
                 android:id="@+id/rl_address"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40">
 
@@ -235,8 +240,8 @@
                     android:id="@+id/iv_address_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_address_ico" />
 
                 <TextView
@@ -268,6 +273,7 @@
                 android:id="@+id/rl_pay_address"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40">
 
@@ -275,8 +281,8 @@
                     android:id="@+id/iv_pay_address_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/pay_address_ico" />
 
                 <TextView
@@ -308,6 +314,7 @@
                 android:id="@+id/rl_bonus"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40">
 
@@ -315,8 +322,8 @@
                     android:id="@+id/iv_bonus_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_bonus_ico" />
 
                 <TextView
@@ -353,6 +360,7 @@
                 android:id="@+id/rl_question"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40"
                 android:visibility="gone"
@@ -362,8 +370,8 @@
                     android:id="@+id/iv_question_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_question_ico" />
 
                 <TextView
@@ -395,6 +403,7 @@
                 android:id="@+id/rl_change_psw"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40">
 
@@ -402,8 +411,8 @@
                     android:id="@+id/iv_change_psw_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_change_psw_ico" />
 
                 <TextView
@@ -435,6 +444,7 @@
                 android:id="@+id/rl_qrcode"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40"
                 android:visibility="gone">
@@ -443,8 +453,8 @@
                     android:id="@+id/iv_qrcode_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_qrcode_ico" />
 
                 <TextView
@@ -476,6 +486,7 @@
                 android:id="@+id/rl_quit"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y140"
+                android:background="@color/white"
                 android:paddingLeft="@dimen/x40"
                 android:paddingRight="@dimen/x40">
 
@@ -483,8 +494,8 @@
                     android:id="@+id/iv_quit_ico"
                     android:layout_width="@dimen/x48"
                     android:layout_height="@dimen/x48"
+                    android:scaleType="centerCrop"
                     android:layout_centerVertical="true"
-                    android:scaleType="center"
                     android:src="@mipmap/fourth_quit_ico" />
 
                 <TextView

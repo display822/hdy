@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.ActivityUtils;
@@ -41,6 +42,8 @@ public class ThirdTabFragment extends BaseFragment implements BaseQuickAdapter.O
     RecyclerView mRlvContentView;
     @BindView(R.id.srl_content_view)
     SwipeRefreshLayout mSrlContentView;
+    @BindView(R.id.emptyView)
+    LinearLayout emptyView;
     private ThirdTabFragmentAdapter mAdapter;
 
     @Override
@@ -102,6 +105,11 @@ public class ThirdTabFragment extends BaseFragment implements BaseQuickAdapter.O
                 mSrlContentView.setRefreshing(false);
                 if (mAdapter != null)
                     mAdapter.setNewData(data);
+                if(data.size()==0){
+                    emptyView.setVisibility(View.VISIBLE);
+                }else{
+                    emptyView.setVisibility(View.GONE);
+                }
                 return null;
             }
 
