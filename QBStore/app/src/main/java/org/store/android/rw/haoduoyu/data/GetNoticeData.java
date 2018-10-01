@@ -7,8 +7,8 @@ public class GetNoticeData {
      * ID : 617
      * IsShow : true
      * IsTop : false
-     * NoticeContent : <span>骑兵夺宝是一家大型的互联网提提商城，在骑兵夺宝商城，物品可以通过买卖而升值。</span>
-     * Title : 关于骑兵夺宝
+     * NoticeContent : <span>好多魚是一家大型的互联网提提商城，在好多魚商城，物品可以通过买卖而升值。</span>
+     * Title : 关于好多魚
      */
 
     private String CreateTime;

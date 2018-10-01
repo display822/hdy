@@ -9,7 +9,8 @@ public interface Api {
 
 
 //    public String SERVER_URL = "http://www.pflhw.com/"; //测试服务器
-    public String SERVER_URL = "http://180.76.160.130:8090/"; //测试服务器
+//    public String SERVER_URL = "http://180.76.160.130:8090/"; //测试服务器
+    public String SERVER_URL = "http://www.kidsgardenreading.com:8080/";
     /**
      * Server Connection Address
      */

@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
             android:layout_marginTop="@dimen/y6"
-            android:text="市场"
+            android:text="鱼池"
             android:textColor="@color/rgb_999999"
             android:textSize="12sp"
             />

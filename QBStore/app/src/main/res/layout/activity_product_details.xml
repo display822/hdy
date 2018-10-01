@@ -27,8 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"
-            android:src="@mipmap/gray_right_back"
-            android:rotation="180"
+            android:src="@mipmap/back_arrow"
             />
     </RelativeLayout>
     <android.support.design.widget.CoordinatorLayout
@@ -39,13 +38,13 @@
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/y340"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/toolbar_layout"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="@dimen/y340"
                 app:contentScrim="@color/fb"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:toolbarId="@+id/toolbar">
@@ -53,9 +52,9 @@
                 <ImageView
                     android:id="@+id/iv_details_bg"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="@dimen/y340"
                     android:background="@color/white"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="fitXY" />
 
             </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -107,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/y88"
             android:layout_gravity="bottom"
-            android:layout_marginBottom="@dimen/y80"
+            android:layout_marginBottom="@dimen/y70"
             android:layout_marginLeft="@dimen/x48"
             android:layout_marginRight="@dimen/x48"
             android:background="@drawable/background_btn"

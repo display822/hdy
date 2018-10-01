@@ -23,7 +23,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y284"
+            android:layout_height="@dimen/y292"
             android:background="#661a1a1a">
 
         </RelativeLayout>

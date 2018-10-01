@@ -70,7 +70,7 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void initData() {
-//        SpannableString spannableString = new SpannableString("欢迎来到骑兵夺宝，选择 注册");
+//        SpannableString spannableString = new SpannableString("欢迎来好多鱼，选择 注册");
 //        spannableString.setSpan(new AgreementClickText(LoginActivity.this, new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {

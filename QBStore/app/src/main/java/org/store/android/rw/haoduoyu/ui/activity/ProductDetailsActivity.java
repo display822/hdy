@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.blankj.utilcode.util.ActivityUtils;
+import com.bumptech.glide.request.target.Target;
 import com.gyf.barlibrary.ImmersionBar;
 
 import org.store.android.rw.haoduoyu.R;
@@ -120,7 +121,7 @@ public class ProductDetailsActivity extends BaseActivity {
                     mTvDetailsType.setVisibility(View.GONE);
                     mBtnSubmit.setText("立即购买");
                 }
-                GlideUtils.loadImage(ProductDetailsActivity.this, data.getProductPic(), mIvDetailsBg);
+                GlideUtils.loadImageSize(ProductDetailsActivity.this, data.getProductPic(), mIvDetailsBg, Target.SIZE_ORIGINAL,Target.SIZE_ORIGINAL);
                 mTvDetailsTitle.setText(data.getProductName());
                 mTvDetailsPrice.setText(data.getPrice());
                 mTvDetailsContext.setText(Html.fromHtml(data.getRemark(), null, null));

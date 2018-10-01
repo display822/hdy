@@ -2,10 +2,10 @@
     <string name="app_name">好多鱼</string>
     <string name="loading_start">loading...</string>
     <string name="first_fragment_wdqb">我的钱包</string>
-    <string name="first_fragment_grck">个人仓库</string>
+    <string name="first_fragment_grck">鱼池仓库</string>
     <string name="first_fragment_qbsc">钱包商城</string>
     <string name="first_fragment_jfsc">积分商城</string>
-    <string name="first_fragment_xsqd">新手抢单区</string>
+    <string name="first_fragment_xsqd">新手鱼池</string>
     <string name="first_fragment_jrqd">已签到</string>
     <string name="first_fragment_jrwqd">未签到</string>
     <string name="first_fragment_jyjl">交易记录</string>
@@ -20,7 +20,7 @@
     <string name="second_fragment_tgljsy">推广累计收益</string>
 
 
-    <string name="my_warehouse_activity_title">我的仓库</string>
+    <string name="my_warehouse_activity_title">鱼池仓库</string>
     <string name="my_wallet_activity_title">我的钱包</string>
     <string name="my_wallet_item_qbye">钱包余额</string>
     <string name="my_wallet_item_zrsy">昨日收益：</string>
